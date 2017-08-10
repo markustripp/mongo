@@ -1,0 +1,29 @@
+{
+    "name": "markustripp/mongo",
+    "description": "MongoDB driver, auth, passport for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Markus Tripp",
+            "email": "markus@mext.at"
+        }
+    ],
+	"require": {
+		"mongodb/mongodb": "^1.1"
+    },
+	"autoload": {
+        "psr-4": {
+            "Markustripp\\Mongo\\": "src/"
+        }
+    },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Markustripp\\Mongo\\MongoServiceProvider"
+			],
+			"aliases": {
+				"Mongo": "Markustripp\\Mongo\\MongoFacade"
+			}
+		}
+	}
+}
