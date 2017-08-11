@@ -11,10 +11,12 @@ class MongoServiceProvider extends ServiceProvider {
 
 		$this->publishes([
 			__DIR__.'/../config/mongo.php' => config_path('mongo.php'),
-		]);
+		], 'mongo');
 	}
 
     public function register() {
+		$this->mergeConfigFrom( __DIR__.'/../config/mongo.php', 'mongo');
+
         $this->app->singleton('mongo', function($app) {
             $config = $app->make('config');
 

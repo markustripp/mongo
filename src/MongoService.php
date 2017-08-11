@@ -8,7 +8,7 @@ class MongoService {
     private $mongo;
 
     public function __construct($uri, $uriOptions, $driverOptions) {
-        $this->mongo = new Client($uri = null, $uriOptions = [], $driverOptions = []);
+        $this->mongo = new Client($uri, $uriOptions = [], $driverOptions = []);
     }
 
     public function get() {

@@ -26,3 +26,11 @@ Route::get('/', function () {
 ```
 
 Add a document to mycollection in mydatabase and open the browser at http://myproject.dev/mongo
+
+To override the default MongoDB connection configuration add the following parameters to your .env file. Find a detailed description on the [MongoDB Driver Manager Page](http://php.net/manual/en/mongodb-driver-manager.construct.php).
+
+```
+MONGO_URI=mongodb://127.0.0.1:27017
+MONGO_URI_OPTIONS=
+MONGO_DRIVER_OPTIONS=
+```
