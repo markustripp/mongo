@@ -9,7 +9,7 @@ See [Laravel 5.5 Package Development](https://medium.com/@markustripp/laravel-5-
 - Add dependency: `composer require markustripp/mongo`
 - Copy configuration: `php artisan vendor:publish`
 
-Now you are ready to use the Mongo Facace, e.g. open routes/web.php:
+Now you are ready to use the Mongo Facade, e.g. open routes/web.php:
 
 ``` PHP
 <?php
